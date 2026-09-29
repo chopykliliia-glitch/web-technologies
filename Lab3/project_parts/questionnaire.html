@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета користувача</title>
+</head>
+
+<body>
+
+<div align="center">
+
+    <h1>Анкета користувача</h1>
+    
+    <form method="get" action="questionnaire.html">
+
+        <fieldset>
+            <legend>Особиста інформація</legend>
+
+            <p>
+                <label for="name">Ім'я:</label><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value=""
+                    placeholder="Введіть ваше ім'я"
+                    required
+                    tabindex="1">
+            </p>
+
+            <p>
+                <label for="surname">Прізвище:</label><br>
+                <input
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    value=""
+                    placeholder="Введіть ваше прізвище"
+                    required
+                    tabindex="2">
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value=""
+                    placeholder="example@gmail.com"
+                    autocomplete="off"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    required
+                    tabindex="3">
+            </p>
+
+            <p>
+                <label for="phone">Мобільний номер:</label><br>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value=""
+                    placeholder="+380XXXXXXXXX"
+                    pattern="\+380[0-9]{9}"
+                    required
+                    tabindex="4">
+            </p>
+
+            <p>
+                <label for="birthdate">Дата народження:</label><br>
+                <input
+                    type="date"
+                    id="birthdate"
+                    name="birthdate"
+                    value=""
+                    tabindex="5">
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Облікові дані</legend>
+
+            <p>
+                <label for="password">Пароль:</label><br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    value=""
+                    placeholder="6 символів: Aa1234"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6}"
+                    required
+                    tabindex="6">
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Стать</legend>
+
+            <p>
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        tabindex="7">
+                    Чоловіча
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        tabindex="8">
+                    Жіноча
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="other"
+                        tabindex="9">
+                    Інше
+                </label>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Форма навчання</legend>
+
+            <p>
+                <label>
+                    <input
+                        type="radio"
+                        name="education"
+                        value="full-time"
+                        tabindex="10">
+                    Денна
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="education"
+                        value="part-time"
+                        checked
+                        tabindex="11">
+                    Заочна
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="education"
+                        value="online"
+                        tabindex="12">
+                    Дистанційна
+                </label>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Інтереси</legend>
+
+            <p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="programming"
+                        tabindex="13">
+                    Програмування
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="design"
+                        tabindex="14">
+                    Веб-дизайн
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="music"
+                        tabindex="15">
+                    Музика
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="sport"
+                        tabindex="16">
+                    Спорт
+                </label>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Курс навчання</legend>
+
+            <p>
+                <label for="course">Оберіть курс:</label><br>
+
+                <select
+                    id="course"
+                    name="course"
+                    tabindex="17">
+
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3" selected>3 курс</option>
+                    <option value="4">4 курс</option>
+                    <option value="5">5 курс</option>
+
+                </select>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Мови програмування</legend>
+
+            <p>
+                <label for="languages">Оберіть декілька:</label><br>
+
+                <select
+                    id="languages"
+                    name="languages"
+                    multiple
+                    size="6"
+                    tabindex="18">
+
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="csharp">C#</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+
+                </select>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Напрями IT</legend>
+
+            <p>
+                <label for="direction">Оберіть напрям:</label><br>
+
+                <select
+                    id="direction"
+                    name="direction"
+                    tabindex="19">
+
+                    <optgroup label="Розробка">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="fullstack">Fullstack</option>
+                    </optgroup>
+
+                    <optgroup label="Дизайн">
+                        <option value="web-design">Web-дизайн</option>
+                        <option value="ui-design">UI-дизайн</option>
+                        <option value="ux-design">UX-дизайн</option>
+                    </optgroup>
+
+                    <optgroup label="Дані">
+                        <option value="data-analysis">Аналіз даних</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="machine-learning">Machine Learning</option>
+                    </optgroup>
+
+                    <optgroup label="Тестування">
+                        <option value="manual-testing">Manual Testing</option>
+                        <option value="automation">Automation Testing</option>
+                        <option value="qa">QA Engineering</option>
+                    </optgroup>
+
+                </select>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Улюблена технологія</legend>
+
+            <p>
+                <label for="technology">Оберіть технологію:</label><br>
+
+                <input
+                    list="technologies"
+                    id="technology"
+                    name="technology"
+                    value=""
+                    placeholder="Почніть вводити назву"
+                    tabindex="20">
+
+                <datalist id="technologies">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="C#">
+                    <option value="Python">
+                </datalist>
+
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Додаткова інформація</legend>
+
+            <p>
+                <label for="about">Розкажіть про себе:</label><br>
+
+                <textarea
+                    id="about"
+                    name="about"
+                    rows="6"
+                    cols="50"
+                    placeholder="Напишіть декілька речень про себе"
+                    tabindex="21"></textarea>
+            </p>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Аудіофайли</legend>
+
+            <p>
+                <label for="audio">Завантажте аудіофайли:</label><br>
+
+                <input
+                    type="file"
+                    id="audio"
+                    name="audio"
+                    value=""
+                    accept="audio/*"
+                    multiple
+                    tabindex="22">
+            </p>
+
+        </fieldset>
+
+
+        <br>
+
+        <input
+            type="submit"
+            name="submit"
+            value="Надіслати"
+            tabindex="23">
+
+        <input
+            type="reset"
+            name="reset"
+            value="Очистити"
+            tabindex="24">
+
+    </form>
+
+
+    <br>
+
+    <hr>
+
+    <h2>POST-форма</h2>
+
+    <form
+        method="post"
+        action="questionnaire.html"
+        enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Відправлення даних методом POST</legend>
+
+            <p>
+                <label for="post-name">Ім'я:</label><br>
+
+                <input
+                    type="text"
+                    id="post-name"
+                    name="post-name"
+                    value=""
+                    placeholder="Введіть ім'я"
+                    tabindex="25">
+            </p>
+
+            <p>
+                <label for="post-email">Email:</label><br>
+
+                <input
+                    type="email"
+                    id="post-email"
+                    name="post-email"
+                    value=""
+                    placeholder="example@gmail.com"
+                    autocomplete="off"
+                    tabindex="26">
+            </p>
+
+            <p>
+                <input
+                    type="submit"
+                    name="post-submit"
+                    value="Надіслати POST-запит"
+                    tabindex="27">
+            </p>
+
+        </fieldset>
+
+    </form>
+
+    <br>
+
+    <a href="../index.html">Повернутись на головну</a>
+
+</div>
+
+</body>
+
+</html>
