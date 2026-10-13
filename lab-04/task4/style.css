@@ -1,65 +1,51 @@
-/* ===== Комбінатор нащадків (пробіл) ===== */
 
-/* 1. span усередині .text-background */
 .text-background span {
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
 }
 
-/* 2. span усередині .text-background, що лежить у div */
 div .text-background span {
     background-color: yellow;
 }
 
-/* 3. span усередині span */
 span span {
     background-color: gray;
     text-decoration: line-through;
 }
 
-/* 4. span в span в ol */
 ol span span {
     font-size: 18px;
     text-transform: uppercase;
 }
 
-/* ===== Дочірній комбінатор (>) ===== */
 
-/* 5. p, що є безпосередньою дитиною section */
 section > p {
     text-shadow: 3px 3px 5px red;
     text-indent: 50px;
 }
 
-/* 6. ul, що є безпосередньою дитиною li */
 li > ul {
     list-style-image: url("check.svg");
 }
 
-/* 7. p.text-background, безпосередньо в div */
 div > p.text-background {
     word-spacing: 50px;
 }
 
-/* 8. p, безпосередньо в .text-bold */
 .text-bold > p {
     font-weight: bold;
 }
 
-/* 9. p, безпосередньо в section, що безпосередньо в .text-bold */
 .text-bold > section > p {
     line-height: 45px;
 }
 
-/* ===== Комбінатори сусідів (+ та ~) ===== */
 
-/* 10. p, який стоїть ОДРАЗУ після img */
 img + p {
     background-color: brown;
 }
 
-/* 11. усі p, що стоять ПІСЛЯ section на тому ж рівні */
 section ~ p {
     color: red;
 }

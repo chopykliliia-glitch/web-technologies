@@ -10,25 +10,25 @@ p{
 div{
     text-align: justify;
 }
-.red{
+.text-red{
     color: red;
 }
-.nowrap{
+.no-wrap{
     white-space: nowrap;
 }
-#second{
+#second-paragraph{
     font-style: italic;
     font-weight: bold;
 }
-.shadow{
+.text-shadow{
     text-shadow: 5px -5px 3px red;
 }
-.block1{
+.block-first{
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
-.block2{
+.block-second{
     letter-spacing: 30px;
     word-spacing: 50px;
 }

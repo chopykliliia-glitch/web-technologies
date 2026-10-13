@@ -1,7 +1,10 @@
+
 body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   line-height: 1.4;
+  border: 1px solid #8888dd;  
+  padding: 10px;            
 }
 
 h1 {
