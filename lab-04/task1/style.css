@@ -16,19 +16,19 @@ div{
 .no-wrap{
     white-space: nowrap;
 }
-#second-paragraph{
+#paragraph{
     font-style: italic;
     font-weight: bold;
 }
 .text-shadow{
     text-shadow: 5px -5px 3px red;
 }
-.block-first{
+.text-through{
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
-.block-second{
+.text-spacing{
     letter-spacing: 30px;
     word-spacing: 50px;
 }
