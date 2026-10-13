@@ -1,0 +1,28 @@
+
+a {
+    color: purple;
+}
+
+.main {
+    color: green;
+}
+
+.square {
+    list-style-type: square;
+}
+
+.check {
+    list-style-image: url("check.svg");
+}
+
+ul li ul {
+    list-style: none;
+}
+
+.square a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}
