@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing, overflow, display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Блокова модель, переповнення та відображення</h1>
+
+    <section>
+        <h2>1. box-sizing</h2>
+        <div class="sizing content-box">
+            content-box<br>
+            Загальна ширина: 300 + 2 × 20 + 2 × 5 = 350px
+        </div>
+        <div class="sizing border-box">
+            border-box<br>
+            Загальна ширина: 300px
+        </div>
+    </section>
+
+    <section class="overflow-section">
+        <h2>2. overflow</h2>
+        <div class="scrap overflow-visible">
+            <b>overflow: visible.</b> Каркас сторінки складається з блоків, і кожен блок має свої відступи, рамку та вміст. Якщо тексту більше, ніж може вмістити блок, постає питання, що робити з надлишком: показати його, обрізати чи додати смугу прокрутки.
+        </div>
+        <div class="scrap overflow-hidden">
+            <b>overflow: hidden.</b> Каркас сторінки складається з блоків, і кожен блок має свої відступи, рамку та вміст. Якщо тексту більше, ніж може вмістити блок, постає питання, що робити з надлишком: показати його, обрізати чи додати смугу прокрутки.
+        </div>
+        <div class="scrap overflow-scroll">
+            <b>overflow: scroll.</b> Каркас сторінки складається з блоків, і кожен блок має свої відступи, рамку та вміст. Якщо тексту більше, ніж може вмістити блок, постає питання, що робити з надлишком: показати його, обрізати чи додати смугу прокрутки.
+        </div>
+        <div class="scrap overflow-auto">
+            <b>overflow: auto.</b> Каркас сторінки складається з блоків, і кожен блок має свої відступи, рамку та вміст. Якщо тексту більше, ніж може вмістити блок, постає питання, що робити з надлишком: показати його, обрізати чи додати смугу прокрутки.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. display</h2>
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li class="hidden"><a href="#">Послуги</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Блог</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+.plan {
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(255, 165, 0);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.plan h1 {
+    margin: 0 0 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.plan ul {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+}
+
+.plan li {
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+}
+
+.plan > ul > li {
+    padding-right: 20px;
+    padding-left: 50px;
+    background-color: rgb(103, 158, 128);
+    background-image: url("icons/checklist.svg");
+    background-position: 10px 10px;
+}
+
+.plan ul ul li {
+    margin-bottom: 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    background-position: 5px center;
+}
+
+.plan .route    { background-image: url("icons/smartphone.svg"); }
+.plan .ticket   { background-image: url("icons/flight_ticket.svg"); }
+.plan .hotel    { background-image: url("icons/hotel.svg"); }
+.plan .car      { background-image: url("icons/car_rental.svg"); }
+.plan .bar      { background-image: url("icons/bar.svg"); }
+.plan .casino   { background-image: url("icons/casino.svg"); }
+.plan .museum   { background-image: url("icons/museum.svg"); }
+.plan .festival { background-image: url("icons/festival.svg"); }
+
+.plan span {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.plan > ul > li > span {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+}
+
+.plan ul ul span {
+    background-color: rgb(218, 106, 32);
+}

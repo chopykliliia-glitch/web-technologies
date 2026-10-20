@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #1d3557;
+    background-color: #f4f8fc;
+}
+
+/* ===== Частина 1: box-sizing ===== */
+.sizing {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2f5d8a;
+    margin: 20px;
+    background-color: #cfe0f5;
+    vertical-align: top;
+}
+
+.content-box {
+    box-sizing: content-box;
+    /* Загальна ширина: 300 + 2 * 20 + 2 * 5 = 350px */
+}
+
+.border-box {
+    box-sizing: border-box;
+    /* Загальна ширина: 300px (padding і border вже всередині width) */
+}
+
+/* ===== Частина 2: overflow ===== */
+.scrap {
+    display: inline-block;
+    width: 220px;
+    max-height: 80px;
+    margin: 10px;
+    border: 2px solid #2f5d8a;
+    background-color: #e8f0fa;
+    vertical-align: top;
+}
+
+/* запас знизу, щоб видимий надлишок тексту (visible) не накладався на наступний розділ */
+.overflow-section {
+    padding-bottom: 130px;
+}
+
+.overflow-visible { overflow: visible; }
+.overflow-hidden  { overflow: hidden; }
+.overflow-scroll  { overflow: scroll; }
+.overflow-auto    { overflow: auto; }
+
+/* ===== Частина 3: display, горизонтальне меню ===== */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #2f5d8a;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1d3f66;
+}
+
+/*
+ * display: none повністю прибирає елемент зі сторінки: він не показується
+ * і місце під нього не резервується, меню стискається, ніби цього пункту
+ * ніколи не було.
+ * Інші способи приховування лишають місце порожнім:
+ * visibility: hidden робить елемент невидимим, але його місце залишається;
+ * opacity: 0 робить елемент прозорим, місце залишається, і на нього
+ * все ще можна клікнути.
+ */
+.hidden {
+    display: none;
+}
