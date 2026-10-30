@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторна №6 — Завдання 6. Попап</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <a class="header-link" href="#">Mail</a>
+        <a class="header-link" href="#">Images</a>
+
+        <div class="apps">
+            <!-- Прихований, але фокусований перемикач: стан попапу -->
+            <input class="popup-toggle" type="checkbox" id="popup-toggle" aria-label="Відкрити або закрити список застосунків">
+            <!-- Видима кнопка popup-button -->
+            <label class="popup-button" for="popup-toggle"></label>
+
+            <!-- Попап -->
+            <div class="popup">
+                <div class="popup-scroll" tabindex="0">
+
+                    <ul class="popup-grid">
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--calendar"></span><span class="app-name">Calendar</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--mail"></span><span class="app-name">Mail</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--news"></span><span class="app-name">News</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--map"></span><span class="app-name">Map</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--files"></span><span class="app-name">Files</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--contacts"></span><span class="app-name">Contacts</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--translate"></span><span class="app-name">Translate</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--videos"></span><span class="app-name">Videos</span></a></li>
+                        <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--search"></span><span class="app-name">Search</span></a></li>
+                    </ul>
+
+                    <!-- Кнопка «More»: ще один прихований перемикач + label -->
+                    <input class="more-toggle" type="checkbox" id="more-toggle" aria-label="More">
+                    <label class="more-button" for="more-toggle">More</label>
+
+                    <!-- Додаткові іконки: з'являються після натискання «More» -->
+                    <div class="popup-extra">
+                        <ul class="popup-grid">
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--photos"></span><span class="app-name">Photos</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--apps"></span><span class="app-name">Apps</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--documents"></span><span class="app-name">Documents</span></a></li>
+                        </ul>
+
+                        <div class="popup-divider"></div>
+
+                        <ul class="popup-grid">
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--chat"></span><span class="app-name">Chat</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--classroom"></span><span class="app-name">Classroom</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--collection"></span><span class="app-name">Collection</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--mars"></span><span class="app-name">Mars</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--blogs"></span><span class="app-name">Blogs</span></a></li>
+                            <li class="popup-item"><a class="app" href="#"><span class="app-icon app-icon--promos"></span><span class="app-name">Promos</span></a></li>
+                        </ul>
+
+                        <div class="popup-footer">
+                            <a class="popup-footer-link" href="#">Even more from Kottans</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <a class="bell" href="#" aria-label="Сповіщення"></a>
+        <a class="avatar" href="#" aria-label="Профіль"></a>
+    </header>
+
+</body>
+</html>

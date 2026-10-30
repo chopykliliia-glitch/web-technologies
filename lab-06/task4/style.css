@@ -1,0 +1,204 @@
+  body {
+            margin: 0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: #222;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .material-icons {
+            vertical-align: middle;
+            font-size: 26px;
+        }
+
+        .nav-h {
+            position: fixed;           
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 56px;
+            background-color: #555;
+            z-index: 100;              
+        }
+
+    
+        .nav-h > ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+       
+        .nav-h > ul > li {
+            float: left;
+            position: relative;        
+        }
+
+    
+        .nav-h > ul > li:last-child {
+            float: right;
+        }
+
+        .nav-h a {
+            display: block;
+            color: white;
+        }
+
+        
+        .nav-h > ul > li > a {
+            width: 110px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+        }
+
+    
+        .nav-h li:hover > a {
+            background-color: #777;
+        }
+
+    
+        .nav-h li.active > a {
+            background-color: #4caf50;
+        }
+
+
+        .nav-h ul ul {
+            position: absolute;
+            top: 100%;                 
+            left: 0;
+            min-width: 210px;
+            background-color: #444;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .nav-h ul ul ul {
+            top: 0;
+            left: 100%;
+        }
+
+        
+        .nav-h > ul > li:last-child > ul {
+            left: auto;
+            right: 0;
+        }
+
+        .nav-h li:hover > ul,
+        .nav-h li:focus-within > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .nav-h ul ul li {
+            position: relative;
+        }
+
+        .nav-h ul ul a {
+            padding: 13px 18px;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        
+        .nav-h ul ul .has-sub > a:after {
+            content: '›';
+            position: absolute;
+            right: 14px;
+        }
+
+    
+        .nav-v {
+            position: fixed;
+            top: 56px;                  
+            bottom: 0;                
+            left: 0;
+            width: 230px;
+            background-color: #0069b4;
+            z-index: 90;
+        }
+
+        .nav-v li {
+            position: relative;       
+        }
+
+        .nav-v a {
+            display: block;
+            padding: 14px 16px;
+            color: white;
+            border-bottom: 1px solid #4d96cc;
+        }
+
+        .nav-v .material-icons {
+            margin-right: 12px;
+            font-size: 22px;
+        }
+
+        .nav-v li:hover > a {
+            background-color: #2a86c8;
+        }
+  
+       .nav-v li.active > a {
+            background-color: #004f87;
+            border-left: 4px solid #ffd166;
+            padding-left: 12px;
+        }
+
+        
+        .nav-v ul ul {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 210px;
+            background-color: #0a5a96;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .nav-v li:hover > ul,
+        .nav-v li:focus-within > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        
+        .nav-v .has-sub > a:after {
+            content: '›';
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+    
+        .content {
+            margin-left: 230px;
+            padding: 76px 30px 30px;   
+        }
+
+        
+        .section-title {
+            position: sticky;
+            top: 56px;                  
+            margin: 0 0 12px;
+            padding: 10px 16px;
+            background-color: #ffd166;
+            font-size: 20px;
+            z-index: 50;
+        }
+
+        .section p {
+            line-height: 1.6;
+            margin: 0 0 14px;
+        }
