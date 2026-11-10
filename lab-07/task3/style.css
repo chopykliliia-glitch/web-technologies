@@ -1,4 +1,4 @@
-/* ---------- Змінні ---------- */
+
 :root {
   --font-main: "Roboto", sans-serif;
 
@@ -13,7 +13,6 @@
   --row-padding: 1.125rem 1.25rem;
 }
 
-/* ---------- Базові стилі (mobile first) ---------- */
 body {
   font-family: var(--font-main);
   font-size: 1rem;
@@ -31,7 +30,6 @@ body {
   color: var(--color-title);
 }
 
-/* ---------- Поточна погода ---------- */
 .current {
   padding: 0 1.25rem 1.5rem;
 }
@@ -90,7 +88,7 @@ body {
   color: var(--color-muted);
 }
 
-/* ---------- Прогноз на n днів ---------- */
+/*  Прогноз на n днів */
 .forecast {
   border-bottom: 1px solid var(--color-line);
 }
@@ -140,7 +138,7 @@ body {
   color: var(--color-muted);
 }
 
-/* ---------- Дуже вузькі екрани ---------- */
+/*  Дуже вузькі екрани */
 @media (max-width: 22.5rem) {
   .current__city {
     font-size: 1.875rem;
@@ -165,7 +163,7 @@ body {
   }
 }
 
-/* ---------- Планшет і більше ---------- */
+/*  Планшет і більше  */
 @media (min-width: 48rem) {
   html {
     font-size: 125%;
