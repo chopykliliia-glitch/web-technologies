@@ -1,0 +1,45 @@
+:root {
+  --gap: 12px;
+  --page-width: 1000px;
+  --color-page: #fff7f6;
+  --color-block: #ffffff;
+  --color-border: #ff5a3c;
+  --block-height: 28px;
+}
+
+body {
+  padding: 16px;
+  background-color: var(--color-page);
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 0.75rem;
+}
+
+.layout {
+  display: grid;
+  gap: var(--gap);
+  max-width: var(--page-width);
+  margin: 0 auto;
+}
+
+.header,
+.nav,
+.main,
+.sidebar,
+.ads,
+.footer {
+  min-height: var(--block-height);
+  padding: 6px 8px;
+  background-color: var(--color-block);
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.main {
+  min-height: 190px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    min-height: 270px;
+  }
+}
